@@ -17,7 +17,7 @@
     "env": {
         "APP_NAME": "Vercel Laravel",
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_URL": "https://laravel-qr-generator.vercel.app/",
         "ASSET_URL": "https://laravel-qr-generator.vercel.app",
         "VERCEL_DEMO_MODE": "true",
