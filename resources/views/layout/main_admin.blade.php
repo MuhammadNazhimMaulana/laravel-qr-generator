@@ -12,7 +12,7 @@
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 
     <!-- Bootstrap CSS -->
-    <link href="{{ asset('public/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <title>App</title>
   </head>
@@ -32,10 +32,10 @@
 
   
     <!-- JS Bootstrap -->
-    <script src="{{ asset('public/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     
     {{-- Jquery --}}
-    <script src="{{ asset('public/JS/javascript.js') }}"></script>
+    <script src="{{ asset('JS/javascript.js') }}"></script>
 
     {{-- Content --}} 
     @yield('script')
