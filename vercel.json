@@ -7,7 +7,7 @@
     "routes": [
         {
             "src": "/(css|js)/(.*)",
-            "dest": "public/**"
+            "dest": "public/$1/$2"
         },
         {
             "src": "/(.*)",
@@ -29,8 +29,6 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "array",
-        "SESSION_DOMAIN": "laravel-qr-generator.vercel.app",
-        "SESSION_LIFETIME": "1440",
         "VIEW_COMPILED_PATH": "/tmp/views",
         "SSR_TEMP_PATH": "/tmp/ssr",
         "NODE_PATH": "node"
