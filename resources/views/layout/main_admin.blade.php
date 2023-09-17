@@ -35,7 +35,7 @@
     <script src="{{ asset('public/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script>
     
     {{-- Jquery --}}
-    <script src="{{ asset('/publicJS/javascript.js') }}" defer></script>
+    <script src="{{ asset('/public/JS/javascript.js') }}" defer></script>
 
     {{-- Content --}} 
     @yield('script')
