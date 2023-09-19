@@ -12,18 +12,19 @@
             <table class="table">
                 <thead>
                   <tr>
+                    <th scope="col">#</th>
                     <th scope="col">Code</th>
                     <th scope="col">QR</th>
                   </tr>
                 </thead>
                 <tbody>
-    
-                @foreach($converteds as $data)
+                @for($i = 1; $i < count($converteds) + 1; $i++)
                   <tr>
-                    <td>{{ $data }}</td>
-                    <td><div class="mb-3 d-flex justify-content-center">{!! DNS2D::getBarcodeHTML($data, 'QRCODE') !!}</div></td>
+                    <td>{{ $i }}</td>
+                    <td>{{ $converteds[$i-1] }}</td>
+                    <td><div class="mb-3 d-flex justify-content-center">{!! DNS2D::getBarcodeHTML($converteds[$i-1], 'QRCODE') !!}</div></td>
                   </tr>
-                @endforeach
+                @endfor
                 </tbody>
               </table>
         </div>
